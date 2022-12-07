@@ -1,0 +1,537 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+$primaryColor: rgb(11, 102, 152);
+$secondaryColor: rgb(4, 163, 242);
+$thirdColor: rgb(2, 10, 21);
+
+body {
+    background-color: $thirdColor;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+// Bagian Logo
+.logo {
+    // background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    height: 40px;
+    box-shadow: 2px 2px 10px 1px black;
+
+    .container {
+        position: fixed;
+        // z-index: 1000;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 10px;
+
+        img {
+            width: 25px;
+            display: none;
+            cursor: pointer;
+
+        }
+
+        h1 {
+            text-align: center;
+            color: $primaryColor;
+            font-size: 20px;
+        }
+
+        span {
+            color: $secondaryColor;
+        }
+    }
+}
+
+// Bagian Data
+.data {
+
+    // background-color: $thirdColor;
+    // height: 100%;
+    .container {
+        display: flex;
+
+        // height: 100vh;
+        .chapter1 {
+            color: white;
+            background-color: $thirdColor;
+            width: 564px;
+            height: 100vh;
+            // z-index: 999;
+            position: fixed;
+            margin-top: 40px;
+            padding-top: 20px;
+            margin-left: -40px;
+            // transition: 1s;
+
+            // border: 1px solid salmon;
+            #tombol-closed {
+                width: 25px;
+                padding-top: 0;
+                float: right;
+                cursor: pointer;
+                visibility: hidden;
+            }
+            h1 {
+                font-size: 30px;
+                padding: 20px 0;
+                // border: 1px solid salmon;
+                text-align: center;
+            }
+
+            .gambar1 {
+                // border: 1px solid salmon;
+                text-align: center;
+            }
+
+            .gambar1 .logo1 {
+                width: 136px;
+                border-radius: 50%;
+            }
+
+            .sosial-media {
+                // border: 1px solid salmon;
+                padding: 20px 0;
+                display: flex;
+                justify-content: space-evenly;
+
+                .sosial {
+                    width: 60px;
+                }
+            }
+
+            .alamat {
+                display: flex;
+                padding: 20px 0;
+                // border: 1px solid salmon;
+                width: 150px;
+                margin: auto;
+
+                .gambar {
+                    margin-right: 10px;
+                    text-decoration: none;
+
+                    a,
+                    img {
+                        display: block;
+                    }
+
+                    img {
+                        width: 40px;
+                        padding: 8px 0;
+                    }
+                }
+
+                .huruf {
+                    a {
+                        color: white;
+                        display: block;
+                        padding: 15px 0;
+                        font-size: 20px;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            footer {
+                text-align: center;
+                // padding-top: 100px;
+                // border: 1px solid green;
+                height: 120px;
+
+                .akhir {
+                    padding-top: 50px;
+                }
+            }
+        }
+
+        .chapter2 {
+            width: 876px;
+            height: 100%;
+            // background-color: red;
+            margin-left: 550px;
+
+            .background {
+                width: 876px;
+                height: 946px;
+                // background-color: blue;
+                // box-shadow: 4px 1px 15px 1px black;
+                background-image: url(("gambar/background.webp"));
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+
+                .judul {
+                    position: absolute;
+                    padding-top: 450px;
+                    padding-left: 250px;
+                    // text-align: center;
+                    color: white;
+                    text-shadow: 5px 5px 3px black;
+
+                    h1 {
+                        font-size: 50px;
+                    }
+
+                    .ketik {
+                        font-size: 30px;
+                        padding-top: 30px;
+                    }
+                }
+            }
+
+            .about {
+                background-color: $primaryColor;
+                color: white;
+                
+                .about2 {
+                    // transition: 2s;
+                    width: 90%;
+                    margin: auto;
+
+                    h1 {
+                        text-align: center;
+                        font-size: 25px;
+                        padding: 20px 0;
+                    }
+
+                    article {
+                        display: flex;
+                        padding-left: 25.5%;
+                        padding-top: 20px;
+
+                        .isibiodata {
+                            padding-left: 2em;
+
+                            p {
+                                padding-bottom: 7px;
+
+                                a {
+                                    // text-decoration: none;
+                                    color: white;
+                                }
+                            }
+                        }
+
+                        .biodata {
+                            p {
+                                padding-bottom: 5px;
+                            }
+                        }
+                    }
+
+                    h3 {
+                        text-align: center;
+                        padding-top: 20px;
+                    }
+
+                    .skills {
+                        div {
+                            width: 100%;
+                            height: 30px;
+                            color: black;
+                            background-color: white;
+                            line-height: 30px;
+                            text-align: center;
+                            margin-bottom: 10px;
+                        }
+                        p {
+                            padding-bottom: 5px;
+                        }
+                    }
+                }
+            }
+
+            .myProjects {
+                background-color: $primaryColor;
+                margin-top: -10px;
+                color: white;
+
+                .myprojects2 {
+                    // border: 1px solid salmon;
+                    width: 90%;
+                    margin: auto;
+
+                    h1 {
+                        font-size: 25px;
+                        text-align: center;
+                        padding: 20px 0;
+                    }
+
+                    .project {
+                        display: flex;
+
+                        .isiProject {
+                            padding-left: 2em;
+
+                            p {
+                                padding-bottom: 7px;
+
+                                a {
+                                    color: white;
+                                }
+                            }
+                        }
+
+                        .namaProject {
+                            p {
+                                padding-bottom: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// Untuk Mobile
+@media screen and (max-width: 576px) {
+
+    // bagian logo
+    .logo {
+        position: fixed;
+        width: 100%;
+
+        .container {
+            position: fixed;
+            // border: 1px solid salmon;
+            margin: auto;
+            width: 100%;
+
+            img {
+                display: flex;
+                position: relative;
+                z-index: -1;
+            }
+
+            .menu {
+                input {
+                    // visibility: hidden;
+                }
+            }
+        }
+    }
+
+  
+
+    // bagian data
+    .data {
+
+        // width: 100%;
+        .container {
+            width: 100%;
+            .chapter1 {
+                // width: 1px;
+                width: 70%;
+                // border: 1px solid salmon;
+                z-index: 0;
+                left: -70%;
+                position: absolute;
+                margin-left: -40px;
+                height: 100vh;
+                position: fixed;
+                background-color: rgba(2, 10, 21, 0.9);
+                transition: 1s;
+
+                #tombol-closed {
+                    visibility: visible;
+                }
+
+                .open-sidebar {
+                    left: 0;
+                }
+
+                .sosial-media {
+                    .sosial {
+                        width: 50px;
+                    }
+                }
+
+                .gambar1 {
+                    .logo1 {
+                        width: 100px;
+                    }
+                }
+
+                .sosial-media {
+                    // border: 1px solid salmon;
+                    margin-top: 20px;
+                    padding-left: 15px;
+
+                    .sosial {
+                        width: 40px;
+                    }
+                }
+
+                .alamat {
+                    // border: 1px solid red;
+                    padding-left: 80px;
+                    margin-top: 50px;
+
+                    .gambar {
+                        img {
+                            width: 30px;
+                        }
+                    }
+
+                    .huruf {
+                        a {
+                            font-size: 15px;
+                            padding: 0;
+                        }
+
+                        .Home {
+                            padding-top: 15px;
+                        }
+
+                        .About {
+                            padding-top: 27px;
+                        }
+
+                        .Blog {
+                            padding-top: 30px;
+                        }
+
+                        .Contact {
+                            padding-top: 25px;
+                        }
+
+                        .PROJECT {
+                            padding-top: 30px;
+                        }
+                    }
+                }
+
+                footer {
+                    font-size: 12px;
+                    padding-left: 15px;
+                }
+
+                h1 {
+                    // border: 1px solid green;
+                    font-size: 25px;
+                    margin-top: 20px;
+                    padding-left: 15px;
+                }
+            }
+
+            .chapter2 {
+                margin-left: 0;
+                width: 500px;
+                // overflow: hidden;
+                position: relative;
+                z-index: -1;
+                width: 100%;
+                margin-top: 40px;
+                // margin: auto;
+
+
+                .background {
+                    // width: 90%;
+                    width: 100%;
+                    background-size: cover;
+                    height: 500px;
+
+                    .judul {
+                        padding-left: 0;
+                        text-align: center;
+                        padding-top: 200px;
+                        // border: 1px solid salmon;
+                        width: 100%;
+
+
+                        h1 {
+                            font-size: 40px;
+
+                        }
+
+                        .ketik {
+                            font-size: 20px;
+                        }
+                    }
+                }
+
+                .about {
+                    .about2 {
+                        h1 {
+                            padding-top: 45px;
+                            font-size: 20px;
+                        }
+
+                        article {
+                            padding-left: 0;
+
+                            .biodata {
+                                p {
+                                    padding-bottom: 15px;
+                                }
+                            }
+
+                            .isibiodata {
+                                p {
+                                    padding-bottom: 15px;
+                                }
+                            }
+                        }
+
+                        p {
+                            font-size: 10px;
+                        }
+
+                        .skills {
+                            div {
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                }
+
+                .myProjects {
+                    .myprojects2 {
+                        h1 {
+                            font-size: 20px;
+                            padding-top: 45px;
+                        }
+
+                        .project {
+                            font-size: 10px;
+
+                            .namaProject {
+                                width: 160px;
+                                // border: 1px solid red;
+                                p {
+                                    padding-bottom: 15px;
+                                }
+                            }
+
+                            .isiProject {
+                                padding-left: 0;
+                                // border: 1px solid salmon;
+                                width: 100%;
+                                p {
+                                    padding-bottom: 15px;
+                                    padding-top: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
